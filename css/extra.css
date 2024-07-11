@@ -1,0 +1,240 @@
+img {
+    width: 100%;
+  }
+
+body{
+    background-image: radial-gradient(white,#f1aa9b)
+
+}
+
+
+  /* HEADER */
+
+  .background{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+  
+  }
+
+  .header{
+    height: 60px; 
+  
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+  
+    /* making sure the header doesn't move */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    /* USE Z-INDEX TO MAKE HEADER APPEAR ABOVE THUMBNAIL (default = 0) */
+    z-index: 100; 
+  
+    background-color:  #ecf0f3;  
+    /* adding a border */
+    border-bottom-width: 1px; 
+    border-bottom-style:hidden;
+    /* border-bottom-color: rgb(228, 228, 228); */
+  
+  }
+  
+  
+  .logo{
+  margin-left: 80px;
+  align-content: center;
+  cursor: pointer;
+  transition: 0.15s; 
+  height: 70%;
+  width: 50%;
+  margin-top: 12px;
+   
+  }
+  
+  .logo:hover{
+    opacity: 85%; 
+    transition: 0.15s; 
+  }
+  
+  
+  
+  .header_buttons{
+    display:flex; 
+    /* aligned horiz */
+    justify-content: center; 
+    align-items: center; 
+    /* position: relative; */
+    /* cursor: pointer; 
+    transition: 0.15s;   */
+    padding-right: 100px;
+    /* flex-shrink: 0;  */
+  
+  
+  }
+  
+  
+  .home_container ,
+  .about_container,
+  .portfolio_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; 
+  margin-left: 20px; 
+  
+  
+  }
+  
+  .contact_container {
+    margin-right: 0;
+  }
+  
+  .button1, .portfolio-button{
+    font-family: Outfit; 
+    font-weight: 500; 
+    font-size: 15px;
+    color: #293241; 
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-color: #293241; 
+    border-style:solid;
+    border-width: thin;
+    cursor:pointer; 
+    transition: 0.15s; 
+  
+  }
+  
+  .button1:hover{
+    /* background-color: #d4d3d3 ; */
+    color:  #f29389;
+    border-color:  #f29389;
+  }
+  
+  .button2{
+    border-radius: 0;
+    border: none; 
+    font-family: Outfit; 
+    font-weight: 700; 
+    font-size: 15px;
+    color: #f29389; 
+    cursor: pointer; 
+    transition: 0.15s; 
+    /* background-color: #f5948a;  */
+    /* border: none;  */
+    /* pink f5948a */
+    /* blue 293241 */
+  }
+  
+  .button2:hover{
+  color: #293241;
+  
+  }
+  
+  
+  /* PORTFOLIO DROP DOWN */
+  .dropdown{
+    position: relative; 
+    display: inline-block;
+    
+  }
+  
+  
+  /* OVERLAY */
+  .portfolio-overlay{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #ecf0f3; /* adjust the background color and transparency as desired */
+    z-index: 999;
+  }
+  
+  .portfolio-contents a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .portfolio-contents {display: block;}
+  
+  .dropdown:hover .portfolio-button { color:  #f29389;
+    border-color:  #f29389; }
+  
+  .dropdown:hover .portfolio-overlay{
+    height: 65%; 
+  }
+  
+  
+  /* The actual links + their properties */
+  .overlay-link{
+    color: black; 
+    text-decoration: none;
+    font-family: outfit;
+    font-weight: 300;
+    font-size: 45px; 
+    margin-top: 10px;
+    transition: 0.15s; 
+  
+  }
+  
+  /* The actual links + their properties: hover */
+  .overlay-link:hover{
+    color:#f29389; 
+    opacity: 0.8; 
+    font-size: 55px; 
+    font-weight: 500;
+  }
+  
+  /* The div holding the links */
+  .port-links{
+    display: none; 
+    height: 60px; 
+  
+    flex-direction:column; 
+    justify-content: space-between; 
+    text-align: center;
+    padding-top: 20px;
+  
+  }
+  
+  /* ------------------------------- */
+
+
+  /*headline */
+  .h2-head{
+    margin-top: 8%;
+  }
+
+  .h2{
+    font-size: 70px;
+    margin-left: 5%;
+    font-family:outfit;
+    letter-spacing: 8px;
+    color: #293241;
+  }
+
+  .mainContainer {
+    margin-top: 2%; 
+    margin-left: 0px; 
+  }
+  
+  .section {
+    border-top: 1vh solid #293241;
+    grid-column-start: 0;
+    grid-column-end: span 4;
+    background-color:#f9f4eb;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1vmin;
+    grid-row-gap: 1vmin;
+    margin-top: 0vh; 
+    padding-top: 20px; /* Optional padding adjustment */
+  }
+  
+  .covid{
+  
+    padding-top: 17%;
+  
+  
+  }

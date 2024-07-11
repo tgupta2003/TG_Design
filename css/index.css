@@ -1,0 +1,466 @@
+
+body{
+    /* need to take off margins */
+    margin: 0; 
+    background-color: #fff7e9;
+}
+.container{
+    padding-top:20px;
+    padding-right: 0; 
+    padding-left: 0;
+    position: absolute;  
+  
+}
+
+.video{
+    width: 100%;
+    height: auto; 
+    object-fit: contain;
+ 
+}
+
+/* The following will play the video without the bottom 
+   video feature/controls like pause and skip and play being
+   visible */
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+
+video::-webkit-media-controls {
+    display: none;
+}
+
+.main-img{
+    width: 100vw;
+    overflow-x: hidden;
+    object-fit: contain;
+    
+    
+}
+
+
+/* HEADER */
+.header{
+    height: 60px; 
+
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+
+    /* making sure the header doesn't move */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    /* USE Z-INDEX TO MAKE HEADER APPEAR ABOVE THUMBNAIL (default = 0) */
+    z-index: 100; 
+
+    background-color:  #ecf0f3;  
+    /* adding a border */
+    border-bottom-width: 1px; 
+    border-bottom-style:hidden;
+    /* border-bottom-color: rgb(228, 228, 228); */
+
+}
+
+
+.logo{
+  margin-left: 80px;
+  align-content: center;
+  cursor: pointer;
+  transition: 0.15s; 
+  height: 70%;
+  margin-top: 12px;
+   
+}
+
+.logo:hover{
+    opacity: 85%; 
+    transition: 0.15s; 
+}
+
+
+
+.header_buttons{
+    display:flex; 
+    /* aligned horiz */
+    justify-content: center; 
+    align-items: center; 
+    /* position: relative; */
+    /* cursor: pointer; 
+    transition: 0.15s;   */
+    padding-right: 100px;
+   
+
+    /* flex-shrink: 0;  */
+
+
+}
+
+
+.home_container ,
+.about_container,
+.portfolio_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; 
+  margin-left: 20px; 
+ 
+ 
+}
+
+.contact_container {
+    margin-right: 0;
+  }
+
+.button1, .portfolio-button{
+    font-family: Outfit; 
+    font-weight: 500; 
+    font-size: 15px;
+    color: #293241; 
+    flex-shrink: 0;
+    padding: 8px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-color: #293241; 
+    border-style:solid;
+    border-width: thin;
+    cursor:pointer; 
+    transition: 0.15s; 
+
+}
+
+.button1:hover{
+    /* background-color: #d4d3d3 ; */
+    color:  #f29389;
+    border-color:  #f29389;
+}
+
+.button2{
+    border-radius: 0;
+    border: none; 
+    font-family: Outfit; 
+    font-weight: 700; 
+    font-size: 15px;
+    color: #f29389; 
+    cursor: pointer; 
+    transition: 0.15s; 
+    /* background-color: #f5948a;  */
+    /* border: none;  */
+    /* pink f5948a */
+    /* blue 293241 */
+}
+
+.button2:hover{
+  color: #293241;
+ 
+}
+
+
+/* PORTFOLIO DROP DOWN */
+.dropdown{
+    position: relative; 
+    display: inline-block;
+    
+}
+
+
+  /* OVERLAY */
+  .portfolio-overlay{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #ecf0f3; /* adjust the background color and transparency as desired */
+    z-index: 999;
+    
+
+
+  }
+
+  .portfolio-contents a:hover {background-color: #ddd;}
+
+ .dropdown:hover .portfolio-contents {display: block;}
+
+ .dropdown:hover .portfolio-button { color:  #f29389;
+    border-color:  #f29389; }
+
+ .dropdown:hover .portfolio-overlay{
+    height: 65%; 
+ }
+
+
+/* The actual links + their properties */
+.overlay-link{
+    color: black; 
+    text-decoration: none;
+    font-family: outfit;
+    font-weight: 300;
+    font-size: 45px; 
+    margin-top: 10px;
+    transition: 0.15s; 
+
+}
+
+/* The actual links + their properties: hover */
+.overlay-link:hover{
+    color:#f29389; 
+    opacity: 0.8; 
+    font-size: 55px; 
+    font-weight: 500;
+}
+
+/* The div holding the links */
+.port-links{
+    display: none; 
+    height: 60px; 
+
+    flex-direction:column; 
+    justify-content: space-between; 
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+
+/* PAGE MIDDLE BANNER */
+.middle-banner{
+    display: flex;
+    flex-direction: row;
+    bottom: 0; 
+    top:860px; 
+    height: 45%;
+    width: 100%; 
+    background-color: #222c3a;
+}
+
+.evil-eye{
+    margin-top: 4%;
+    margin-left: 45px; 
+    height: 240px; 
+    width: 400px; 
+}
+
+.banner-text{
+    margin-top: 6%;
+    margin-left: 2%;
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-align: center;
+    color: #e2c3c3; 
+    font-family: outfit;
+    font-size: 45px;
+    opacity: 1; 
+    padding-right: 5%;
+
+
+}
+
+.inner-text{
+    color: #f39781; 
+    opacity: 1; 
+    font-style: italic;
+
+}
+
+
+/* PREVIEWS */
+
+.preview-box{
+    margin-top: 3%;
+    background-color: #758aa6;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    background-color: #eafcfc;
+    width: auto;
+    height: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 50px;
+}
+
+
+/* text */
+
+.text-boxes{
+    padding-left: 10%;
+    margin-top: -4%;
+    padding-right: 2%;
+   
+  
+   
+}
+
+.heading{
+    font-family: outfit;
+    font-weight: 700;
+    font-size: 35px;
+    
+}
+
+.duration{
+    font-family: outfit;
+    font-weight: 200;
+
+
+}
+
+/*view button */
+.view-button, .view-button2, .view-button3, .view-button4{
+    margin-left: -45%;
+    font-family: outfit; 
+    letter-spacing: 5px;
+    font-weight: 200; 
+    font-size: 15px;
+    color: white; 
+    padding: 8px 25px;
+    border-radius: 30px;
+    border-color: black; 
+    border-style:solid;
+    border-width: thin;
+    cursor:pointer; 
+    transition: 0.15s; 
+    background-color: black;
+    
+
+}
+
+.view-button:hover, .view-button2:hover, .view-button3:hover, .view-button4:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 7px;
+
+}
+
+.view-all{
+    margin-top: -1%;
+    font-family: outfit; 
+    letter-spacing: 5px;
+    font-weight: 200; 
+    font-size: 20px;
+    color:  #e2c3c3; 
+    padding: 30px 45%;
+    border-radius: 2px;
+    border-color: black; 
+    border-style:solid;
+    border-width: thin;
+    cursor:pointer; 
+    transition: 0.15s; 
+    background-color: black;
+
+}
+
+.view-all:hover{
+    background-color: #e2c3c3;
+    color: black;
+    letter-spacing: 8px;
+    font-size: 23px;
+
+   
+
+}
+
+.preview-img{
+    margin-left: 0%;
+    padding-right: 10%;
+    margin-top: -2%;
+    width: 45%;
+
+}
+
+.footer{
+    width: 100%;
+   /* linear gradient */
+    background-image: linear-gradient( #ffefd3, white);
+  
+    
+   
+}
+
+.page-end{
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    margin-top: -22%;
+    margin-left: 20%;
+   
+
+}
+
+.footer-link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: outfit;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #222c3a;
+}
+
+.footer-link:hover{
+   font-weight: 500;
+    
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.header-title{
+    font-family: outfit;
+    font-weight: 700px;
+    font-size: 20px;
+}
+
+.logo-end{
+    height: 25%;
+    width: 25%;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+}
+
+.social{
+    height: 50px;
+    width: 60px;
+}
+
+.social:hover{
+    height: 60px;
+    width: 70px;
+
+}
+
+
