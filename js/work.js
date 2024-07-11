@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", function(){
         // Define the ID you want to pass in the URL
         const id = "avenue"; // This should match the 'id' of the object in your JSON data
         // Construct the URL
-        const url = `http://127.0.0.1:5500/work.html?section=item&id=${id}`;
+        const url = `work.html?section=item&id=${id}`;
         // Navigate to the constructed URL
         window.location.href = url;
   });
@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // Define the ID you want to pass in the URL
     const id = "Trek"; // This should match the 'id' of the object in your JSON data
     // Construct the URL
-    const url = `http://127.0.0.1:5500/work.html?section=item&id=${id}`;
+    const url = `work.html?section=item&id=${id}`;
     // Navigate to the constructed URL
     window.location.href = url;
   });
@@ -331,7 +331,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // Define the ID you want to pass in the URL
     const id = "Myflix"; // This should match the 'id' of the object in your JSON data
     // Construct the URL
-    const url = `http://127.0.0.1:5500/work.html?section=item&id=${id}`;
+    const url = `work.html?section=item&id=${id}`;
     // Navigate to the constructed URL
     window.location.href = url;
   });
@@ -340,8 +340,8 @@ document.addEventListener("DOMContentLoaded", function(){
   document.getElementById("view-button4").addEventListener("click", function() {
     // Define the ID you want to pass in the URL
     const id = "animation"; // This should match the 'id' of the object in your JSON data
-    // Construct the URL
-    const url = `http://127.0.0.1:5500/work.html?section=item&id=${id}`;
+    // Construct the URL: `http://127.0.0.1:5500/work.html?section=item&id=${id}`
+    const url = `work.html?section=item&id=${id}`;
     // Navigate to the constructed URL
     window.location.href = url;
   });
