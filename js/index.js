@@ -34,69 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
       window.location.href = "work.html";
     });
 
-
-    
-    //---------------------------------------------------
-
-    // mouse is hovering over portfolio button 
-      portfolioButton.addEventListener('mouseover', function() {
-        clearTimeout(timeoutId);
-        portfolioOverlay.style.display = 'block';
-        //height of the banner!
-        portfolioOverlay.style.height = '55%';
-        portfolioLinks.style.display = 'flex'; 
-    
-      });
-
-    //  mouse is continuing hovering over portfolio overlay
-      portfolioOverlay.addEventListener('mouseover', function() {
-        clearTimeout(timeoutId);
-        portfolioOverlay.style.display = 'block';
-        //height of the banner!
-        portfolioOverlay.style.height = '55%';
-        portfolioLinks.style.display = 'flex'; 
-    
-      });
-    
-    // mouse is no longer hovering over portfolio overlay
-      portfolioOverlay.addEventListener('mouseout', function() {
-        timeoutId = setTimeout(function() {
-            portfolioOverlay.style.height = '0';
-            portfolioLinks.style.display = 'none'; 
-            // overlayLink.style.display = 'none';
-            setTimeout(function() {
-              portfolioOverlay.style.display = 'none';
-        
-            }, 1000); // Adjust the duration of the transition in milliseconds
-          }, 1000);
-      });
-    
-    
-    //  PAGE-END APPEARANCE
-    const graphic = document.querySelector('.footer');
-    
-    function checkScroll() {
-        const windowHeight = window.innerHeight;
-        const scrollY = window.scrollY || window.pageYOffset;
-        const bodyHeight = document.body.offsetHeight;
-      
-        // Adjust the threshold as needed
-        const threshold = 0;
-      
-        if (windowHeight + scrollY >= bodyHeight - threshold) {
-          // Add the 'appear' class to show the graphic
-          graphic.classList.add('appear');
-        }
-      }
-      
-      
-    
-    
-    
-      
-    
-    
-    
     
     });
     
