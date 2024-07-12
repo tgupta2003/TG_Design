@@ -464,3 +464,83 @@ video::-webkit-media-controls {
 }
 
 
+
+/* Responsive Design */
+/* starting from 1205px it will change */
+@media (max-width: 1205px) {
+
+    .middle-banner{
+        display: flex;
+        flex-direction: row;
+        bottom: 0; 
+        top:860px; 
+        height: 45%;
+        width: 100%; 
+        background-color: #222c3a;
+    }
+
+    .evil-eye{
+       display: none; 
+    }
+
+    .banner-text{
+        margin-top: 10%;
+        margin-left: 2%;
+        font-weight: 500;
+        letter-spacing: 8px;
+        text-align: center;
+        color: #e2c3c3; 
+        font-family: outfit;
+        font-size: 35px;
+        opacity: 1; 
+        padding-right: 5%;
+    
+    
+    }
+    
+    .preview-img{
+        object-fit: contain;
+    
+    }
+
+    .view-all{
+        width: 100%;
+    
+    }
+    
+    .page-end{
+        display: none;
+    }
+
+    .logo-end{
+        margin-left: 17%;
+        margin-top: 35%;
+        object-fit: contain;
+        height: 25%;
+        width: 35%;
+        padding-bottom: 8%;
+    }
+    
+    .footer-links{
+        display: block;
+        object-fit: contain;
+      
+    }
+    
+    .footer-link{
+        display: none;
+    }
+    
+    
+    .work{
+        display: none;
+    
+    }
+    
+    .about{
+        display: none;
+    }
+}
+
+
+
