@@ -19,6 +19,36 @@ let mentorDisplayElement;
 
 //ITEM TITLE = NAME 
 let mentorCollection = [
+  //uber project
+  {
+    //Project 0: Uber Eats 
+    "name": "Uber Eats Redesign - IBM Accelerate Program 2024",
+
+    //category of portfolio: multiple
+    "category":'design',
+    
+    //what each page is:
+    "id" : "ubereats",
+    //content on this page for the person: 
+
+    //INFORMATION DISPLAYED
+    "description" : "As my final project for the IBM Accelerate Program 2024: Design Track, I redesigned the interface of Uber Eats. I specifically focused on implementing allery-conscious/ dietary friendly features, changing the order of filters based on user needs, making it easy to request for assistance for those with diabilites, and more. Check out the full, detailed presentation here: https://www.figma.com/slides/JCwnyZPKryavjF4ONDSjrL/Uber-E.-Presentation?node-id=5-2872&t=MRgacFov9r9H2Jns-1", 
+    "takeaways" : "User interviews, synthesizing data, journey mapping, persona-building, designing with Figma.     Check out the Figma board here: https://www.figma.com/design/FIYglJWm4TBepi65ZYbjSu/UberEats-Redesgn?node-id=0-1&t=keMxAkkuZqfLMJ5S-1",
+
+    //preview image
+    "image" : "Media/work/ubereats-cov.png",
+
+    //images for grid
+    "images": [
+      "Media/work/jmap.png",
+      // "Media/work/uber-eats.png",
+      "Media/work/pain-points.png",
+      "Media/work/ubereats1.png",
+      "Media/work/ubereats2.png",
+    ]
+
+    
+  },
   {
     //Project 1: Avenue
     "name": "avenue: a non-profit startup building community for women in STEAM+Finance",
@@ -105,33 +135,6 @@ let mentorCollection = [
 
    
   },
-
-
-  {
-    //Project#4: Space Oddity Animation
-    "name" : "animation",
-    //which category: grads
-    "category" : "multimedia",
-    //what each page is:
-    "id" : "animation",
-
-    //INFORMATION DISPLAYED
-    "description" : "I decided to approach my first attempt at animation using a digital, stop-motion technique. After outlining the video with a storyboard, I created each frame — every line, patch of shading, highlight, or lettering, on illustrator using only the MacBook mousepad! As a novice animator, I resorted to taking screenshots of my work on Illustrator to mimic the motion/effect that an animation provides. The video was recognized at the Dubai Youth Film Festival: Best Picture in the Open Category (winner).", 
-    "takeaways" : "Editing and stitching together the video on Final Cut Pro, using Adobe Illustrator for illustration, using Apple Motion to animate illustrations. Check out the video here: https://drive.google.com/file/d/1VlYgcMQpn5Afdzi4-HziUboFBoCFdpMc/view?usp=sharing",
-
-    //Preview image 
-    "image" : "Media/home/a+f.png",
-
-
-    //images for grid
-    "images": [
-      "Media/work/a1.png",
-      "Media/work/a2.png",
-      "Media/work/a3.png",
-      "Media/work/a4.png",
-      
-    ]
-  },
   
   {
     //Project#6: Interviews
@@ -185,6 +188,31 @@ let mentorCollection = [
       
     ]
     
+  },
+  {
+    //Project#4: Space Oddity Animation
+    "name" : "animation",
+    //which category: grads
+    "category" : "multimedia",
+    //what each page is:
+    "id" : "animation",
+
+    //INFORMATION DISPLAYED
+    "description" : "I decided to approach my first attempt at animation using a digital, stop-motion technique. After outlining the video with a storyboard, I created each frame — every line, patch of shading, highlight, or lettering, on illustrator using only the MacBook mousepad! As a novice animator, I resorted to taking screenshots of my work on Illustrator to mimic the motion/effect that an animation provides. The video was recognized at the Dubai Youth Film Festival: Best Picture in the Open Category (winner).", 
+    "takeaways" : "Editing and stitching together the video on Final Cut Pro, using Adobe Illustrator for illustration, using Apple Motion to animate illustrations. Check out the video here: https://drive.google.com/file/d/1VlYgcMQpn5Afdzi4-HziUboFBoCFdpMc/view?usp=sharing",
+
+    //Preview image 
+    "image" : "Media/home/a+f.png",
+
+
+    //images for grid
+    "images": [
+      "Media/work/a1.png",
+      "Media/work/a2.png",
+      "Media/work/a3.png",
+      "Media/work/a4.png",
+      
+    ]
   },
 
   {
@@ -317,7 +345,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
   // HP: TREK
-  document.getElementById("view-button2").addEventListener("click", function() {
+  document.getElementById("view-button4").addEventListener("click", function() {
     // Define the ID you want to pass in the URL
     const id = "Trek"; // This should match the 'id' of the object in your JSON data
     // Construct the URL
@@ -337,9 +365,19 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
   // HP: ANIMATION
-  document.getElementById("view-button4").addEventListener("click", function() {
+  //document.getElementById("view-button2").addEventListener("click", function() {
     // Define the ID you want to pass in the URL
-    const id = "animation"; // This should match the 'id' of the object in your JSON data
+   // const id = "animation"; // This should match the 'id' of the object in your JSON data
+    // Construct the URL: `http://127.0.0.1:5500/work.html?section=item&id=${id}`
+   // const url = `work.html?section=item&id=${id}`;
+    // Navigate to the constructed URL
+   // window.location.href = url;
+  //});
+
+  // HP: UberEats 
+  document.getElementById("view-button2").addEventListener("click", function() {
+    // Define the ID you want to pass in the URL
+    const id = "ubereats"; // This should match the 'id' of the object in your JSON data
     // Construct the URL: `http://127.0.0.1:5500/work.html?section=item&id=${id}`
     const url = `work.html?section=item&id=${id}`;
     // Navigate to the constructed URL
