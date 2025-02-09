@@ -32,8 +32,8 @@ let mentorCollection = [
     //content on this page for the person: 
 
     //INFORMATION DISPLAYED
-    "description" : "As my final project for the IBM Accelerate Program 2024: Design Track, I redesigned the interface of Uber Eats. I specifically focused on implementing allery-conscious/ dietary friendly features, changing the order of filters based on user needs, making it easy to request for assistance for those with diabilites, and more. Check out the full, detailed presentation here: https://www.figma.com/slides/JCwnyZPKryavjF4ONDSjrL/Uber-E.-Presentation?node-id=5-2872&t=MRgacFov9r9H2Jns-1", 
-    "takeaways" : "User interviews, synthesizing data, journey mapping, persona-building, designing with Figma.     Check out the Figma board here: https://www.figma.com/design/FIYglJWm4TBepi65ZYbjSu/UberEats-Redesgn?node-id=0-1&t=keMxAkkuZqfLMJ5S-1",
+    "description" : "As my final project for the IBM Accelerate Program 2024: Design Track, I redesigned the interface of Uber Eats. I specifically focused on implementing allery-conscious/ dietary friendly features, changing the order of filters based on user needs, making it easy to request for assistance for those with diabilites, and more.", 
+    "takeaways" : "User interviews, synthesizing data, journey mapping, persona-building, designing with Figma. Check out the detailed presentation here: https://www.figma.com/deck/p18Z3fYm27syxBzpLBjgWn/TG-UX-Portfolio?node-id=2-434&node-type=slide&t=I2evxAy9oXSp349S-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
 
     //preview image
     "image" : "Media/work/ubereats-cov.png",
@@ -76,6 +76,36 @@ let mentorCollection = [
     ]
 
     
+  },
+  {
+    //Project#4: MEUF Magazine 
+    "name" : "Meuf Magazine",
+    //which category: grads
+    "category" : "webdev",
+    //what each page is:
+    "id" : "Meuf",
+
+    //INFORMATION DISPLAYED
+    "description" : "As digital director, I designed and launched the official website for a NYC-based magazine, showcasing collective discourse, artistic expression, and storytelling. I developed the website on Squarespace, leveraging Adobe Photoshop and Illustrator to design custom graphics and enhance visual appeal. Further, I manage and organize the upload of 100+ multimedia submissions, attracting 5,800+ unique visitors within the first 4 months of launching the site. You can view the site here: https://www.meufmagazine.com/", 
+    "takeaways" : "Web design, Wireframing, Problem-solving",
+
+    //Preview image 
+    "image" : "Media/home/meuf2.png",
+
+
+    //images for grid
+    "images": [
+      "Media/work/meuf1.JPG",
+      "Media/work/meuf2.JPG",
+      "Media/work/meuf3.JPG",
+      "Media/work/m3.png",
+      "Media/home/meuf.png",
+      
+      "Media/work/m2.png",
+      
+      "Media/work/m1.png",
+      
+    ]
   },
   {
 
@@ -189,31 +219,7 @@ let mentorCollection = [
     ]
     
   },
-  {
-    //Project#4: Space Oddity Animation
-    "name" : "animation",
-    //which category: grads
-    "category" : "multimedia",
-    //what each page is:
-    "id" : "animation",
-
-    //INFORMATION DISPLAYED
-    "description" : "I decided to approach my first attempt at animation using a digital, stop-motion technique. After outlining the video with a storyboard, I created each frame — every line, patch of shading, highlight, or lettering, on illustrator using only the MacBook mousepad! As a novice animator, I resorted to taking screenshots of my work on Illustrator to mimic the motion/effect that an animation provides. The video was recognized at the Dubai Youth Film Festival: Best Picture in the Open Category (winner).", 
-    "takeaways" : "Editing and stitching together the video on Final Cut Pro, using Adobe Illustrator for illustration, using Apple Motion to animate illustrations. Check out the video here: https://drive.google.com/file/d/1VlYgcMQpn5Afdzi4-HziUboFBoCFdpMc/view?usp=sharing",
-
-    //Preview image 
-    "image" : "Media/home/a+f.png",
-
-
-    //images for grid
-    "images": [
-      "Media/work/a1.png",
-      "Media/work/a2.png",
-      "Media/work/a3.png",
-      "Media/work/a4.png",
-      
-    ]
-  },
+  
 
   {
     //Project#8: Album Cover
@@ -344,16 +350,17 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location.href = url;
   });
 
-  // HP: TREK
+  // HP: Meuf
   document.getElementById("view-button4").addEventListener("click", function() {
     // Define the ID you want to pass in the URL
-    const id = "Trek"; // This should match the 'id' of the object in your JSON data
+    const id = "Meuf"; // This should match the 'id' of the object in your JSON data
     // Construct the URL
     const url = `work.html?section=item&id=${id}`;
     // Navigate to the constructed URL
     window.location.href = url;
   });
 
+ 
   // HP: MYFLIX
   document.getElementById("view-button3").addEventListener("click", function() {
     // Define the ID you want to pass in the URL
@@ -363,6 +370,8 @@ document.addEventListener("DOMContentLoaded", function(){
     // Navigate to the constructed URL
     window.location.href = url;
   });
+
+
 
   // HP: ANIMATION
   //document.getElementById("view-button2").addEventListener("click", function() {

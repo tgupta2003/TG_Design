@@ -245,7 +245,7 @@ video::-webkit-media-controls {
 }
 
 .banner-text{
-    margin-top: 6%;
+    margin-top: 8%;
     margin-left: 2%;
     font-weight: 500;
     letter-spacing: 8px;
@@ -321,7 +321,7 @@ video::-webkit-media-controls {
 }
 
 /*view button */
-.view-button, .view-button2, .view-button3, .view-button4{
+.view-button, .view-button2, .view-button3, .view-button4, .view-button5{
     margin-left: -45%;
     font-family: outfit; 
     letter-spacing: 5px;
@@ -340,7 +340,7 @@ video::-webkit-media-controls {
 
 }
 
-.view-button:hover, .view-button2:hover, .view-button3:hover, .view-button4:hover{
+.view-button:hover, .view-button2:hover, .view-button3:hover, .view-button4:hover, .view-button5:hover{
     background-color: white;
     color: black;
     letter-spacing: 7px;
