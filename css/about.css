@@ -2,41 +2,10 @@
 body{
     /* need to take off margins */
     margin: 0; 
-    background-color: #fff7e9;
-}
-.container{
-    padding-top:20px;
-    padding-right: 0; 
-    padding-left: 0;
-    position: absolute;  
-  
+    /* background-color: #fff7e9; */
+    background-color:#f3c3b9;
 }
 
-.video{
-    width: 100%;
-    height: auto; 
-    object-fit: contain;
- 
-}
-
-/* The following will play the video without the bottom 
-   video feature/controls like pause and skip and play being
-   visible */
-video::-webkit-media-controls-timeline {
-    display: none;
-}
-
-video::-webkit-media-controls {
-    display: none;
-}
-
-.main-img{
-    width: 100vw;
-    overflow-x: hidden;
-    object-fit: contain;
-    
-    
-}
 
 .active-button {
     color:  #f29389;
@@ -123,7 +92,6 @@ video::-webkit-media-controls {
     border-width: thin;
     cursor:pointer; 
     transition: 0.15s; 
-
 }
 
 .button1:hover{
@@ -151,46 +119,31 @@ video::-webkit-media-controls {
 
 .dropdown:hover .portfolio-button { opacity: 0.7; }
 
-
-/* The div holding the links */
-.port-links{
-    display: none; 
-    height: 60px; 
-
-    flex-direction:column; 
-    justify-content: space-between; 
-    text-align: center;
-    padding-top: 20px;
-
-}
-
-/* main */
+/* MAIN CONTENT*/
 .main-container{
     margin-top: 3.5%;
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #293241;
+    background-color:#ecf0f3;
     object-fit: contain; 
 }
 
 .trisha{
-    height: auto;
+    height:50%;
     width: 50%;
     object-fit: contain; 
-    
-
 
 }
 
 .text{
-    padding-top: 2%;
+    padding-top: 5%;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 25px;
-    color: #f29389;
+    color:black;
     font-family: outfit;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     
 }
 
@@ -211,20 +164,20 @@ video::-webkit-media-controls {
 }
 
 .favs{
-    padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 3%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
     padding-bottom: 30px;
 }
 
 
 .fav-list{
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 30px;
     font-weight: 500;
-    padding-left: 40px;
+    padding-left: 0px;
     padding-right: 40px;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     font-family: outfit;
     color: black;
     line-height: 7vh;
@@ -245,17 +198,15 @@ video::-webkit-media-controls {
 }
 
 .end-text{
-    font-family: futura;
-    margin-left: 3%;
-    margin-top: 4%;
+    font-size: 15px;
+    font-family: outfit;
+    margin-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 500;
 }
 
-.logo-end{
-    padding-left: 50px;
-    padding-bottom: 40px;
-    height: 30%;
-    width: 10%;
-}
+
 
 .footer-link{
     text-decoration: none;
@@ -290,8 +241,6 @@ video::-webkit-media-controls {
 /* MEDIA QUERIES */
 @media (max-width: 1056px) {
 
-    
-
   .button1, .portfolio-button{
     
     padding: 4px 8px;
@@ -303,11 +252,30 @@ video::-webkit-media-controls {
    
   }
 
-
  
 }
 
 @media (max-width: 580px) {
+
+    .fav-list{
+    
+    font-size: 20px;
+    line-height: 5vh;
+
+    }
+
+    .evil-eyes{
+    padding-left: 10px;
+    border-top: 1vh ;
+    grid-column-start: 0;
+    grid-column-end: span 4;
+    background-color:#212b39;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: 0vh;
+    }
+
+    
   
 
 
