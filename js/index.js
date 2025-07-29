@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //ABOUT
     document.getElementById("portfolio-button").addEventListener("click", function() {
-        window.location.href = "work.html";
+        window.location.href = "TG_Work.html";
     });
 
     //CONTACT
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //VIEW ALL
     document.getElementById("view-all").addEventListener("click", function() {
-      window.location.href = "work.html";
+      window.location.href = "TG_Work.html";
     });
 
     

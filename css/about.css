@@ -44,7 +44,7 @@ video::-webkit-media-controls {
 }
 
 
-/* HEADER */
+/* NAVIGATION  */
 .header{
     height: 60px; 
 
@@ -64,8 +64,6 @@ video::-webkit-media-controls {
     /* adding a border */
     border-bottom-width: 1px; 
     border-bottom-style:hidden;
-    /* border-bottom-color: rgb(228, 228, 228); */
-
 }
 
 
@@ -85,21 +83,11 @@ video::-webkit-media-controls {
 }
 
 
-
 .header_buttons{
     display:flex; 
-    /* aligned horiz */
     justify-content: center; 
     align-items: center; 
-    /* position: relative; */
-    /* cursor: pointer; 
-    transition: 0.15s;   */
     padding-right: 100px;
-   
-
-    /* flex-shrink: 0;  */
-
-
 }
 
 
@@ -139,9 +127,9 @@ video::-webkit-media-controls {
 }
 
 .button1:hover{
-    /* background-color: #d4d3d3 ; */
-    color:  #f29389;
-    border-color:  #f29389;
+    opacity: 0.7;
+    /* color:  #f29389;
+    border-color:  #f29389; */
 }
 
 .button2{
@@ -150,73 +138,19 @@ video::-webkit-media-controls {
     font-family: Outfit; 
     font-weight: 700; 
     font-size: 15px;
-    color: #f29389; 
+    /* color: #f29389;  */
+    color: #293241;
     cursor: pointer; 
     transition: 0.15s; 
-    /* background-color: #f5948a;  */
-    /* border: none;  */
-    /* pink f5948a */
-    /* blue 293241 */
 }
 
 .button2:hover{
-  color: #293241;
+  opacity: 0.7;
  
 }
 
+.dropdown:hover .portfolio-button { opacity: 0.7; }
 
-/* PORTFOLIO DROP DOWN */
-.dropdown{
-    position: relative; 
-    display: inline-block;
-    
-}
-
-
-  /* OVERLAY */
-  .portfolio-overlay{
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #ecf0f3; /* adjust the background color and transparency as desired */
-    z-index: 999;
-    
-
-
-  }
-
-  .portfolio-contents a:hover {background-color: #ddd;}
-
- .dropdown:hover .portfolio-contents {display: block;}
-
- .dropdown:hover .portfolio-button { color:  #f29389;
-    border-color:  #f29389; }
-
- .dropdown:hover .portfolio-overlay{
-    height: 65%; 
- }
-
-
-/* The actual links + their properties */
-.overlay-link{
-    color: black; 
-    text-decoration: none;
-    font-family: outfit;
-    font-weight: 300;
-    font-size: 45px; 
-    margin-top: 10px;
-    transition: 0.15s; 
-
-}
-
-/* The actual links + their properties: hover */
-.overlay-link:hover{
-    color:#f29389; 
-    opacity: 0.8; 
-    font-size: 55px; 
-    font-weight: 500;
-}
 
 /* The div holding the links */
 .port-links{
@@ -351,5 +285,33 @@ video::-webkit-media-controls {
         padding-right: 120px;
     }
 }
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1056px) {
+
+    
+
+  .button1, .portfolio-button{
+    
+    padding: 4px 8px;
+
+  }
+
+  .logo{
+  margin-left: 40px;
+   
+  }
+
+
+ 
+}
+
+@media (max-width: 580px) {
+  
+
+
+}
+
 
 
