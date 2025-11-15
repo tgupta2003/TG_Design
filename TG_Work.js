@@ -153,6 +153,28 @@ if (window.location.pathname.includes("TG_Projects.html")) {
       technical: "Set and lighting design, minimal editing on Photoshop.",
       link1: "N/A",
       link2: "N/A",
+    },
+    Vista: {
+      title: "Vista: Creative Direction Intern",
+      description: "September 2025: Collaborated with Creative Director Anna Li to shape and execute the creative direction and social content for Vista’s new Soho office launch. The work below became one of Vista Global’s most successful and engaging posts on both LinkedIn and Instagram.",
+      tools: ["Creative Direction", "Social Media/ Marketing", "Production",],
+      images: [
+        "Media/vista_imgs/vista1.png",
+        "Media/vista_imgs/vista2.png",
+        "Media/vista_imgs/vista3.png",
+        "Media/vista_imgs/vista4.png",
+        "Media/vista_imgs/vista5.png",
+        "Media/vista_imgs/vista6.png",
+        "Media/vista_imgs/vista7.png",
+        "Media/vista_imgs/vista8.png",
+        "Media/vista_imgs/vista9.png",
+        "Media/vista_imgs/vista10.png",
+      ],
+      interface: "N/A",
+      visual: "Our approach centered on bold color storytelling, visual nods to the aircraft elements that inspired the space, dynamic split-screen framing, and features spotlighting Vista’s partners (including Assouline), all designed to capture the full character of the Soho office.",
+      technical: "Milanote",
+      link1: "Video: https://www.linkedin.com/posts/vista-global_vista-in-new-york-activity-7387436422569406465-RZ7J?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACaMN_wBKZpJeNX6HFY_jwUjaHuhhUaB6HU",
+      link2: "N/A",
     }
   };
 
