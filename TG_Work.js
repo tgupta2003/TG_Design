@@ -175,6 +175,25 @@ if (window.location.pathname.includes("TG_Projects.html")) {
       technical: "Milanote",
       link1: "Video: https://www.linkedin.com/posts/vista-global_vista-in-new-york-activity-7387436422569406465-RZ7J?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACaMN_wBKZpJeNX6HFY_jwUjaHuhhUaB6HU",
       link2: "N/A",
+    },
+    Dave: {
+      title: "Dave the Diver: Interactive Web Experience",
+      description: "Team members: Trisha Gupta, Ashley Liu, Yihang Zhou. We built a simplified version of Dave the Diver, a dive-and-dine RPG where players catch fish during the day and run a sushi restaurant at night. This iteration focused on a clear progression and economy system, strategic gameplay mechanics, improved usability, and stronger visual polish. I played a primary role in interface design, visual graphics, and in-between screen flows, shaping the UI hierarchy, tutorials, and scene transitions for clarity and consistency. Key systems include a money-driven progression model with limited daily dives, upgrade paths for diving gear and restaurant interiors, and a game-over condition tied to maintenance costs. We added strategic mechanics such as weapon discovery, a rule-based weapon shop, multi-factor restaurant ratings (freshness, wait time, environment, order accuracy), and weapon behaviors that vary by fish size. Controls and UX were refined based on playtesting/user feedback, with simplified aiming/shooting, weapon loadouts, underwater interactions, and a Day-1 tutorial overlay. Visual updates included a layered underwater environment, a refined restaurant interior, and themed decorative assets to create a cohesive art direction. The entire experience was built using the p5.js library for web-based interactivity.",
+      tools: ["Game Design", "Interactive Systems", "Interactive Media",],
+      images: [
+        "Media/work/davethediver/d1.png",
+        "Media/work/davethediver/d2.png",
+        "Media/work/davethediver/d3.png",
+        "Media/work/davethediver/d4.png",
+        "Media/work/davethediver/d5.png",
+        "Media/work/davethediver/d6.png",
+        "Media/work/davethediver/d7.png",
+      ],
+      interface: "Led the interface design by defining clear UI hierarchy, designing tutorial and transition screens, and refining in-game menus and overlays to improve usability, clarity, and visual consistency across scenes.",
+      visual: "The visuals were heavily based on the original Dave the Diver game's original art. We used AI to help us generate images to use in our implementation and modified/edited them to fit the overall art style of our version.",
+      technical: "p5.js library, HTML/CSS, wireframing",
+      link1: "Github Repository -> https://github.com/ashleyliu0407/davethediver", 
+      link2: "Please reach out to me directly if you'd like to try the game.",
     }
   };
 
