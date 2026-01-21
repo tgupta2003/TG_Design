@@ -110,6 +110,7 @@ if (window.location.pathname.includes("TG_Projects.html")) {
       images: [
         "Media/work/ubereats1.png",
         "Media/work/ubereats2.png",
+        "Media/work/qs.png",
         "Media/work/interview.png",
         "Media/work/jmap.png",
         "Media/work/pain-points.png",
