@@ -105,22 +105,22 @@ if (window.location.pathname.includes("TG_Projects.html")) {
     },
     UberEats: {
       title: "UberEats Redesign",
-      description: "As part of a competitive design summer program (IBM Accelerate), I led user research and iterative design for an UberEats accessibility redesign. The key things I introduced were food allergy filters to support the 6% of U.S. adults with dietary restrictions, added audio descriptions for visually impaired users, and increased font sizes in key areas to improve readability. While I conducted qualitative interviews and synthesized insights into personas and journey maps, I would have liked to incorporate more quantitative research and deeper problem validation to strengthen the solution further.",
+      description: "As part of a competitive design summer program (IBM Accelerate), I led user research and iterative design for an UberEats accessibility redesign with user success defined as: users with dietary restrictions and visual or auditory impairments can quickly identify safe options and complete an order with clarity and confidence. The key things I introduced were food allergy filters to support the 6% of U.S. adults with dietary restrictions, added audio descriptions for visually impaired users, and increased font sizes in key areas to improve readability. While I conducted qualitative interviews and synthesized insights into personas and journey maps, I would have liked to incorporate more quantitative research and deeper problem validation to strengthen the solution further.",
       tools: ["Qualitative Research", "Accessibility Design", "User Personas & Journey Mapping", "Enterprise-Scale Design Thinking","Design Thinking","Wireframing & Prototyping","Figma","Iterative Design Process"],
       images: [
         "Media/work/ubereats1.png",
         "Media/work/ubereats2.png",
+        "Media/work/interview.png",
         "Media/work/jmap.png",
         "Media/work/pain-points.png",
         "Media/work/wf1.png",
         "Media/work/wf2.png",
-        "Media/work/wf3.png"
       ],
       interface: "Wireframe mockups created roughly based off of interview findings. The final designs are created in Figma with the help of a food-delivery service template on Figma.",
       visual: "Stuck to the UberEats color story (#162328 and #3FC060) and typeface.",
       technical: "Use of Figma for wireframes and collection of data/ audience segmentation.",
-      link1: "Figma Wireframes (Multiple Iterations): https://www.figma.com/design/FIYglJWm4TBepi65ZYbjSu/UberEats-Redesgn?node-id=0-1&p=f",
-      link2: "Complete Presentation: https://www.figma.com/deck/p18Z3fYm27syxBzpLBjgWn/TG-UX-Portfolio?node-id=2-434&node-type=slide&t=I2evxAy9oXSp349S-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      link1: "Complete Presentation & Analysis -> https://www.figma.com/deck/p18Z3fYm27syxBzpLBjgWn/TG-UX-Portfolio?node-id=2-434&node-type=slide&t=I2evxAy9oXSp349S-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      link2: "N/A",
     },
     Myflix: {
       title: "Myflix: An Interactive Streaming Website Designed to Hit Close to Home...",
